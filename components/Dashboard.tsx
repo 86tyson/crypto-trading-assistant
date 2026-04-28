@@ -265,7 +265,7 @@ export default function Dashboard() {
       {tradeLog.length > 0 && (
         <div style={S.card}>
           <div style={S.cardTitle}>Trade Log</div>
-          <div style={{ color: "#555", fontSize: "11px", ...S.tradeRow }}>
+          <div style={{ ...S.tradeRow, color: "#555" }}>
             <span>Time</span><span>Asset</span><span>Action</span><span>Amount</span><span>Status</span>
           </div>
           {tradeLog.slice(0, 20).map(entry => (
